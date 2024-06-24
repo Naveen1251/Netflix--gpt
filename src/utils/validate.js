@@ -10,4 +10,4 @@ export const checkValidData = (email,password,fullName)=>{
 
     
     return null;
-}
+};
