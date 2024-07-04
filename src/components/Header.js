@@ -13,6 +13,7 @@ const Header = () => {
   const disaptch = useDispatch()
   const navigate = useNavigate()
   const user = useSelector((store) => store.user);
+  
   const handleSignOut = ()=>{
       signOut(auth).then(() => {
       
@@ -51,7 +52,7 @@ const Header = () => {
       />
      {user && ( 
         <div className='flex p-2'>
-          <img className='w-12 h-12 ' alt='usericon' src={user.photoURL}/>
+          <img className='w-12 h-12 ' alt='usericon' src={user?.photoURL}/>
           
           <button onClick={handleSignOut} className='font-bold text-white pl-1'>Sign Out</button>
         </div>
