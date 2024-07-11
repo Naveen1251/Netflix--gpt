@@ -18,7 +18,7 @@ const Browse = () => {
   useTopRatedMovies();
   useUpcomingMovies();
   useOnTheAirMovies();
-  // console.log(showGptSearch)
+  console.log(showGptSearch)
 
 
   return (
